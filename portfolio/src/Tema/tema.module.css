@@ -1,0 +1,41 @@
+.tema {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  width: auto;
+  height: auto;
+  color: var(--texto-secundario);
+  background: transparent;
+  border: none;
+  border-radius: 6px;
+  font-family: "Exo 2", sans-serif;
+  font-size: clamp(10px, 3vw, 15px);
+  font-weight: 800;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  z-index: 999999999;
+}
+
+.tema:hover {
+  transform: scale(1.06);
+}
+
+.tema img {
+  width: 40px;
+  height: 40px;
+  flex-shrink: 0;
+}
+
+.tema p {
+  margin: 0;
+  padding: 0;
+  font-size: inherit;
+}
+
+@media (max-width: 550px) {
+  
+  .tema img{
+    width: 30px;
+  }
+}
